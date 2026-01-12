@@ -1,0 +1,84 @@
+:root {
+  --wwwsupersidecomfirefly: rgba(8, 5, 34, 1);
+  --wwwpeppercontentiowoodsmoke: rgba(23, 26, 28, 1);
+  --wwwpeppercontentiowhite: rgba(255, 255, 255, 1);
+  --wwwsupersidecomspring-wood: rgba(247, 249, 242, 1);
+  --wwwsupersidecomspring-wood-15: rgba(247, 249, 242, 0.15);
+  --wwwsupersidecomspring-wood-10: rgba(247, 249, 242, 0.1);
+  --wwwpeppercontentioonahau: rgba(207, 248, 255, 1);
+  --wwwpeppercontentiobondi-blue: rgba(1, 143, 166, 1);
+  --wwwpeppercontentioblack: rgba(0, 0, 0, 1);
+  --wwwpeppercontentiopippin: rgba(255, 233, 226, 1);
+  --wwwpeppercontentiooutrageous-orange: rgba(255, 99, 51, 1);
+  --wwwpeppercontentioice-cold: rgba(188, 245, 215, 1);
+  --wwwpeppercontentiojewel: rgba(14, 116, 61, 1);
+  --wwwpeppercontentiopale-rose: rgba(255, 220, 235, 1);
+  --wwwpeppercontentiocerise: rgba(226, 60, 133, 1);
+  --wwwpeppercontentiostratos: rgba(5, 0, 51, 1);
+  --wwwpeppercontentioblue: rgba(22, 0, 229, 1);
+  --wwwpeppercontentioathens-gray: rgba(249, 250, 251, 1);
+  --wwwpeppercontentiochelsea-gem: rgba(153, 115, 0, 1);
+  --wwwpeppercontentioblack-rock: rgba(7, 4, 37, 1);
+  --wwwpeppercontentioperiwinkle: rgba(209, 204, 255, 1);
+  --wwwpeppercontentiomartinique: rgba(46, 43, 74, 1);
+  --wwwpeppercontentiowhite-1: rgba(255, 255, 255, 0.01);
+
+  --helvetica-48px-font-family: "Helvetica", Helvetica;
+  --helvetica-48px-font-weight: 400;
+  --helvetica-48px-font-size: 48px;
+  --helvetica-48px-letter-spacing: 0px;
+  --helvetica-48px-line-height: normal;
+  --helvetica-48px-font-style: normal;
+
+  --helvetica-20-px-font-family: "Helvetica", Helvetica;
+  --helvetica-20-px-font-weight: 400;
+  --helvetica-20-px-font-size: 20px;
+  --helvetica-20-px-letter-spacing: 0px;
+  --helvetica-20-px-line-height: normal;
+  --helvetica-20-px-font-style: normal;
+
+  --32-px-helvetica-font-family: "Helvetica", Helvetica;
+  --32-px-helvetica-font-weight: 400;
+  --32-px-helvetica-font-size: 32px;
+  --32-px-helvetica-letter-spacing: 0px;
+  --32-px-helvetica-line-height: normal;
+  --32-px-helvetica-font-style: normal;
+
+  --helvetica-18-px-font-family: "Helvetica", Helvetica;
+  --helvetica-18-px-font-weight: 400;
+  --helvetica-18-px-font-size: 18px;
+  --helvetica-18-px-letter-spacing: 0px;
+  --helvetica-18-px-line-height: normal;
+  --helvetica-18-px-font-style: normal;
+
+  --HELVETICA-60-PX-font-family: "Helvetica", Helvetica;
+  --HELVETICA-60-PX-font-weight: 400;
+  --HELVETICA-60-PX-font-size: 60px;
+  --HELVETICA-60-PX-letter-spacing: 0px;
+  --HELVETICA-60-PX-line-height: normal;
+  --HELVETICA-60-PX-font-style: normal;
+
+  --helvetica-24-px-font-family: "Helvetica", Helvetica;
+  --helvetica-24-px-font-weight: 400;
+  --helvetica-24-px-font-size: 24px;
+  --helvetica-24-px-letter-spacing: 0px;
+  --helvetica-24-px-line-height: normal;
+  --helvetica-24-px-font-style: normal;
+
+  --www-superside-com-semantic-heading-3-font-family: "Inter", Helvetica;
+  --www-superside-com-semantic-heading-3-font-weight: 400;
+  --www-superside-com-semantic-heading-3-font-size: 46.875px;
+  --www-superside-com-semantic-heading-3-letter-spacing: 0.10000000149011612px;
+  --www-superside-com-semantic-heading-3-line-height: 56px;
+  --www-superside-com-semantic-heading-3-font-style: normal;
+
+  --16-bold-font-family: "Helvetica", Helvetica;
+  --16-bold-font-weight: 700;
+  --16-bold-font-size: 16px;
+  --16-bold-letter-spacing: 0px;
+  --16-bold-line-height: normal;
+  --16-bold-font-style: normal;
+
+  --24-px-bold-font-family: "Helvetica", Helvetica;
+  --24-px-bold-font-weight: 700;
+}
