@@ -1,0 +1,95 @@
+
+.container{
+    height: 1500px;
+    position: relative;
+    .sticky{
+        position: sticky;
+        overflow: hidden;
+        top: 0;
+        height : 100vh;
+      
+
+        .el{
+            width: 100%;
+            height: 100%;
+            top: 0;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            
+            
+           
+            
+        }
+    }
+}
+
+.imageContainer{
+                position: relative;
+                padding-top: 30px;
+                background-color: black;
+                // width: 1vw;
+                // height: 100px;
+                height: 500px; /* Now it has a solid physical boundary! */
+  width: 100%;
+                
+            }
+video{
+    object-fit: cover;
+   margin : auto;
+   display : block;
+   height:90vh;
+ 
+    width : 175vh;
+    z-index:1000;
+    position: relative;
+    top : -28px;
+
+}
+
+
+
+/* --- TIER 1: TABLETS & SMALL LAPTOPS (Max Width: 1024px) --- */
+@media screen and (max-width: 1024px) {
+  .imageContainer {
+    height: 400px;
+  }
+  video {
+    /* Shifts away from 166vh to prevent horizontal blowout */
+    width: 90vw; 
+    height: 60vh;
+  }
+}
+
+/* --- TIER 2: PORTRAIT TABLETS / PHABLETS (Max Width: 768px) --- */
+@media screen and (max-width: 768px) {
+  .container {
+    height: 1200px; /* Shortens the physical scroll track slightly for touch */
+  }
+  .imageContainer {
+    height: 300px;
+    padding-top: 20px;
+  }
+  video {
+    width: 95vw;
+    height: 45vh;
+  }
+}
+
+/* --- TIER 3: ALL MOBILE SMARTPHONES (Max Width: 480px) --- */
+@media screen and (max-width: 480px) {
+  .container {
+    height: 900px; /* Significantly shorter scroll track so thumbs don't get tired */
+  }
+  .imageContainer {
+    height: auto;
+    padding: 15px 10px; /* Gives the black background a little breathing room on the edges */
+  }
+  video {
+    width: 100%;
+    height: 35vh; /* Standard mobile video height */
+    border-radius: 8px; /* Softer edges on mobile look much cleaner */
+  }
+}

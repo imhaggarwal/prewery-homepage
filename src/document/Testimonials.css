@@ -1,0 +1,120 @@
+/* Container Logic */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.testimonials-wrapper {
+  background-color: #0b081c; /* Deep indigo/black base */
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  padding: 100px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position : relative;
+  top : 56vh;
+}
+
+/* Header Text Logic */
+.testimonials-header {
+  text-align: center;
+ 
+  margin-bottom: 60px;
+  
+}
+
+.testimonials-header h2 {
+  font-size: 27.7pt;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 400;
+  margin-bottom: 2px;
+  color: #ffff;
+}
+
+.testimonials-header h1 {
+  font-size: 27.7pt;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+/* Grid Layout Logic */
+.testimonials-grid {
+  display: grid;
+  /* Creates exactly 3 columns of equal width */
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 24px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Card UI Logic */
+.testimonial-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 30px;
+  color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-quote {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #374151;
+  margin-bottom: 30px;
+}
+
+/* Author Alignment Logic */
+.card-author {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.author-avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #cbd5e1;
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+}
+
+.author-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 4px;
+}
+
+.author-company {
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+/* Responsive Fallbacks */
+@media (max-width: 1024px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+  .testimonials-header h1 {
+    font-size: 1.8rem;
+  }
+  .testimonials-header h2 {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,276 @@
+// Variables
+$bg-color: #080425;
+$text-main: #ffffff;
+$text-muted: #e0e0e0;
+$stat-green: #a7e98a; 
+$arrow-red: #ff5757;
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* --- 1. Main Wrapper --- */
+.case-study-container {
+  background-color:$bg-color ; /* Deep dark background */
+  color: #FFFFFF;
+  width: 100%;
+  /* Fluid padding: scales from 40px top/bottom on mobile to 100px on desktop */
+  // padding: clamp(100px, 1vw, 200px) clamp(10px, 16vw, 8%);
+  padding : 140px;
+  padding-top:6rem;
+  padding-bottom:7rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow: hidden;
+  position: relative;
+  top:41vh;
+}
+
+/* --- 2. Top Header Compartment --- */
+.header-section {
+  text-align: left;
+  max-width: 1200px;
+  margin: 0 auto;
+  display : flex;
+  flex-direction : column;
+  align-items: center;
+  
+  h1 {
+    /* Fluid typography: 28px min on phones, 48px max on desktop */
+    font-size: 26.7pt;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #D1D5DB;
+    letter-spacing: -0.02em;
+    max-width: 1000px;
+    
+    
+    
+    strong {
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+
+    
+
+    .l2{
+      position: relative;
+      display : flex;
+      justify-content: center;
+      
+    }
+   
+  }
+
+  .subtitle {
+    color: #f8f5f4;
+    font-size: clamp(12pt, 1.5vw, 12pt);
+    font-weight: 500;
+    margin-top: 25px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    
+    .arrow { font-size: 18px; margin-right: 5px;color : #ff4d2e }
+  }
+
+  /* Logos Row Logic: Flexbox with wrapping so they never blow out the screen horizontally */
+  .logos-row {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    
+    .logo-placeholder {
+      width: clamp(50px, 4vw, 70px);
+      height: clamp(50px, 4vw, 70px);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: #000;
+      font-size: clamp(14px, 1vw, 20px);
+      
+      /* Just some mockup colors based on your classes */
+      &.bg-red { background-color: #FF4B4B; }
+      &.bg-yellow { background-color: #FFD13B; }
+      &.bg-white { background-color: #FFFFFF; }
+      &.bg-orange { background-color: #FF8A00; }
+      &.bg-purple { background-color: #B53BFF; }
+      &.bg-blue { background-color: #3B82FF; }
+    }
+  }
+}
+
+/* --- 3. Bottom Grid Compartment --- */
+.content-section {
+  max-width: 1200px;
+  margin: clamp(50px, 8vw, 80px) auto 0;
+  
+  /* THE GRID ENGINE: 2 columns by default */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(40px, 6vw, 80px);
+  align-items: center;
+  
+  /* Left Column Text */
+  .text-content {
+   
+    
+
+
+    h2 {
+      font-size: clamp(24px, 4vw, 28pt);
+    //  font-family: 'Articulat CF';
+    //  src:url('./assets/articulat-cf-normal.woff')format('woff');
+    font-family :-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-weight: 200;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      width : 500px;
+      
+      strong { font-weight: 700; color: #FFFFFF; }
+    }
+    
+    p {
+      font-size: 11.7pt;
+      color: #ffffff;
+      line-height: 1.5;
+      width: 578px;
+    
+    }
+    
+  
+    
+    /* Stats Layout */
+    .stats-row {
+      display: flex;
+      gap: clamp(30px, 5vw, 60px);
+      margin-bottom: 35px;
+      
+      .stat {
+        h3 {
+          font-size: 36pt;
+          font-weight: 700;
+          color: #7ed957;
+          line-height: 1.1;
+          margin-bottom: 5px;
+        }
+        p {
+          font-size: 10.7pt;
+          color: #ffff;
+          
+          letter-spacing: 0.05em;
+          font-weight: 600;
+          width: 202px;
+        }
+      }
+    }
+    
+    .casestudy-link {
+      color: #ffff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 11.7pt;
+      transition: opacity 0.2s ease;
+      
+      &:hover { opacity: 0.8; }
+    }
+  }
+  
+  /* Right Column Image Setup */
+  .image-content {
+    width: 100%;
+    
+    .image-placeholder {
+      width: 437.2px;
+      height: 471.9px;
+      /* Forces the box to maintain a perfect 4:3 rectangle shape on all devices */
+      aspect-ratio: 4 / 3; 
+      background-color: #141924;
+      border: 1px dashed #2A3143;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #666;
+      font-weight: 500;
+      overflow: hidden;
+      
+      img {
+        width: 407.2px;
+        height: 471.9;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+  .content-section {
+   
+    grid-template-columns: 1fr;
+    
+   
+    .text-content { order: 2; }
+    .image-content { order: 1; margin-bottom: 20px; }
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .header-section .logos-row {
+   
+    gap: 10px; 
+  }
+  
+  .content-section .text-content .stats-row {
+  
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* --- Animation Styles --- */
+
+.animated-content {
+  
+  animation: fadeInUp 0.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  will-change: transform, opacity;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); 
+  }
+}
+
+.logo-placeholder {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+  }
+  
+  &.active {
+    outline: 2px solid #000000;
+    transform: scale(1.05);
+  }
+}
+
+.divider {
+  display: block;
+  width: 100%;         
+  height: 1px;           
+  background-color: lightblue;
+  border: none;          
+  margin: 30px 0;
+  flex-shrink: 0;        
+  opacity: 1;            
+}

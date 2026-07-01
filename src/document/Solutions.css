@@ -1,0 +1,160 @@
+/* Variables */
+:root {
+  --bg-main: white;
+  --text-dark: #1a1a1a;
+  --text-gray: #4a4a4a;
+  --btn-red: #ff4d2e;
+  --card-yellow: #fff6d4 ;
+  --card-green: #efffdb;
+  --card-purple:#f7e9fb;
+  --card-blue: #d2daff;
+  --icon-bg: #4a5568;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.solutions-container {
+  background-color: var(--bg-main);
+  color: var(--text-dark);
+  font-family: system-ui, -apple-system, sans-serif;
+  min-height: 100vh;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  position: relative;
+  top: 40vh;
+}
+
+/* Header Section */
+.solutions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 4rem;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.solutions-header .header-text h2 {
+  font-size: 28pt;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0 0 1rem 0;
+  color: #2d3748;
+}
+
+.solutions-header .header-text h2 strong {
+  font-weight: 700;
+  color: #1a202c;
+}
+
+.solutions-header .header-text p {
+  font-size: 12.1pt;
+  color: var(--text-gray);
+  margin: 0;
+}
+
+.solutions-header .schedule-btn {
+  background-color: var(--btn-red);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.solutions-header .schedule-btn:hover {
+  opacity: 0.9;
+}
+
+/* Cards Grid Section */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.solution-card {
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 400px;
+  position: relative;
+  margin: 3px ;
+  
+}
+
+/* Color Classes */
+.card-yellow { background-color: var(--card-yellow);}
+.card-green { background-color: var(--card-green);}
+.card-purple { background-color: var(--card-purple); }
+.card-blue { background-color: var(--card-blue); }
+
+.card-content h3 {
+  font-size: 26pt;
+  margin: 0 0 1.5rem 0;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.card-content p {
+  font-size: 11.3pt;
+  line-height: 1.5;
+  color: #3a414e;
+  margin: 0;
+}
+
+/* Bottom Icon */
+.card-icon {
+  align-self: flex-end;
+  background-color: var(--icon-bg);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.card-icon .arrow-icon {
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 1;
+  position : relative;
+  top:-4px
+
+
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .solutions-header {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
